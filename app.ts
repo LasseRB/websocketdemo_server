@@ -6,7 +6,7 @@ const io = require("socket.io")(Http, {
         methods: ["GET", "POST"]
     }
 });
-import { Kriger } from '../lib'
+import { Kriger } from './lib'
 
 Http.listen(3000, () => console.log('Lytter på 3000/demo'))
 let users= new Map<string, Kriger>()
