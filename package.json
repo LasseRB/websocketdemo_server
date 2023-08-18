@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "source": "./app.ts",
+  "source": "./app.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "parcel app.ts",
+    "start": "npx parcel",
     "build": "parcel build"
   },
   "keywords": [],
