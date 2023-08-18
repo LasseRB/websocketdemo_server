@@ -2,13 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "source": "./app.ts",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
   "scripts": {
-    "start": "npx parcel",
-    "build": "parcel build"
+    "start": "nodemon app.ts"
   },
   "keywords": [],
   "author": "",
