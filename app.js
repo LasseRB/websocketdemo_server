@@ -34,4 +34,14 @@ io.of('/demo').on('connection', function (socket) {
             socket.broadcast.emit('moveMouse', JSON.stringify(kriger));
         }
     });
+    socket.on('slideChange', function (data) {
+        var slide = JSON.parse(data);
+        console.log(data);
+        var kriger = users.get(slide.id);
+        if (kriger && (slide === null || slide === void 0 ? void 0 : slide.slide)) {
+            kriger.slide = slide === null || slide === void 0 ? void 0 : slide.slide;
+            users.set(kriger.id, kriger);
+        }
+        socket.broadcast.emit('user_slideChange', JSON.stringify(slide));
+    });
 });

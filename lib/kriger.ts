@@ -3,4 +3,5 @@ export class Kriger {
     name = '';
     type = 'vue';
     position = {x: 0, y: 0};
+    slide = 8;
 }
